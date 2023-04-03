@@ -29,7 +29,8 @@ df=pd.read_csv('/content/student_scores.csv')
 df.head()
 
 ## Output:
-![image](https://user-images.githubusercontent.com/128135616/229406656-a19b8fff-c52f-4e74-b17d-14bf53c9a23e.png)
+![image](https://user-images.githubusercontent.com/128135616/229407022-d4184f5e-5d36-4393-8b0b-f05cf581f801.png)
+
 
 
 
