@@ -37,7 +37,6 @@ df=pd.read_csv('/content/student_scores.csv')
     
 [4] print("Array value of y:")
     y=df.iloc[:,1].values
-    y
 ```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
