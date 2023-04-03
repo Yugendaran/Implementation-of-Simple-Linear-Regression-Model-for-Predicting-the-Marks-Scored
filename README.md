@@ -30,7 +30,8 @@ print("df.head():")
 df.head()
 
 ## Output:
-(https://user-images.githubusercontent.com/128135616/229407434-917d6652-76a4-40b3-a50b-e3cf4ae264d2.png)
+![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
+
 
 
 
