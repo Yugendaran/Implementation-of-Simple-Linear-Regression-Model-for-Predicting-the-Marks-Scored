@@ -30,11 +30,18 @@ df=pd.read_csv('/content/student_scores.csv')
 
 [2] print("df.tail(): ")
     df.tail()
+  
+[3] print("Array values of x:")
+    x=df.iloc[:,:-1].values
+    x
 ```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
 
 ![image](https://user-images.githubusercontent.com/128135616/229409013-8619da20-1224-4018-b95b-0d74e22e950f.png)
+
+![image](https://user-images.githubusercontent.com/128135616/229409393-350b3f5c-3150-46be-860c-b3237f9eeddb.png)
+
 
 
 
