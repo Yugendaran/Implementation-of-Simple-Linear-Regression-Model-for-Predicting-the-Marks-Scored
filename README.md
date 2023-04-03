@@ -40,7 +40,8 @@ df=pd.read_csv('/content/student_scores.csv')
 
 ![image](https://user-images.githubusercontent.com/128135616/229409013-8619da20-1224-4018-b95b-0d74e22e950f.png)
 
-![image](https://user-images.githubusercontent.com/128135616/229409393-350b3f5c-3150-46be-860c-b3237f9eeddb.png)
+![image](https://user-images.githubusercontent.com/128135616/229409927-c29886cf-7bc0-4fa2-9d62-3e0bf51b3b97.png)
+
 
 
 
