@@ -25,11 +25,16 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
 df=pd.read_csv('/content/student_scores.csv')
 #displaying the content in datafile
-print("df.head():")
-df.head()
+[1] print("df.head():")
+    df.head()
+
+[2] print("df.tail(): ")
+    df.tail()
 ```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
+![image](https://user-images.githubusercontent.com/128135616/229409013-8619da20-1224-4018-b95b-0d74e22e950f.png)
+
 
 
 
