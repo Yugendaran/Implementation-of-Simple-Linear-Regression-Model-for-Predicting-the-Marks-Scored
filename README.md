@@ -34,6 +34,10 @@ df=pd.read_csv('/content/student_scores.csv')
 [3] print("Array values of x:")
     x=df.iloc[:,:-1].values
     x
+    
+[4] print("Array value of y:")
+    y=df.iloc[:,1].values
+    y
 ```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
@@ -41,6 +45,9 @@ df=pd.read_csv('/content/student_scores.csv')
 ![image](https://user-images.githubusercontent.com/128135616/229409013-8619da20-1224-4018-b95b-0d74e22e950f.png)
 
 ![image](https://user-images.githubusercontent.com/128135616/229409927-c29886cf-7bc0-4fa2-9d62-3e0bf51b3b97.png)
+
+![image](https://user-images.githubusercontent.com/128135616/229430829-372414ea-f6cb-438b-8762-92dd0ecc0cba.png)
+
 
 
 
