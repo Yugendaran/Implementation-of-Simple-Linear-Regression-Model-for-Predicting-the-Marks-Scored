@@ -27,7 +27,7 @@ df=pd.read_csv('/content/student_scores.csv')
 #displaying the content in datafile
 print("df.head():")
 df.head()
-
+```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
 
