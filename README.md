@@ -48,8 +48,21 @@ df=pd.read_csv('/content/student_scores.csv')
     y_pred=regressor.predict(x_test)
     
     #displaying predicted values
+    print("y_pred:")
     y_pred
-    
+     
+    #displaying actual values
+    print("y_test:")
+    y_test
+ 
+[6] #graph plot for training data
+    print("Training set graph:")
+    plt.scatter(x_train,y_train,color="orange")
+    plt.plot(x_train,regressor.predict(x_train),color="red")
+    plt.title("Hours vs Scores (Trainig set)")
+    plt.xlabel("Hours")
+    plt.ylabel("Scores")
+    plt.show()
 ```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
@@ -60,7 +73,13 @@ df=pd.read_csv('/content/student_scores.csv')
 
 ![image](https://user-images.githubusercontent.com/128135616/229430829-372414ea-f6cb-438b-8762-92dd0ecc0cba.png)
 
-![image](https://user-images.githubusercontent.com/128135616/229709402-08c04449-7e71-4ad7-9a9e-121d73330810.png)
+![image](https://user-images.githubusercontent.com/128135616/229710141-fd0eb77d-729b-4a39-872b-c494430633f5.png)
+
+![image](https://user-images.githubusercontent.com/128135616/229710494-ee71d890-689b-421e-8fec-89ee2d6424c8.png)
+
+![image](https://user-images.githubusercontent.com/128135616/229711316-2f9a93f9-287b-4772-a814-14eb656ebe93.png)
+
+
 
 
 
