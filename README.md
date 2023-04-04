@@ -64,6 +64,23 @@ df=pd.read_csv('/content/student_scores.csv')
     plt.xlabel("Hours")
     plt.ylabel("Scores")
     plt.show()
+    
+[7] #graph plot for Test data
+    print("Test Set graph:")
+    plt.scatter(x_test,y_test,color="green")
+    plt.plot(x_test,regressor.predict(x_test),color="violet")
+    plt.title("Hours vs Scores (Trainig set)")
+    plt.xlabel("Hours")
+    plt.ylabel("Scores")
+    plt.show()
+    
+ [8] print("Values of MSE,MAE and RMSE:")
+     mse=mean_squared_error(y_test,y_pred)
+     print('MSE = ',mse)
+     mae=mean_absolute_error(y_test,y_pred)
+     print('MAE = ',mae)
+     rmse=np.sqrt(mse)
+     print('RMSE = ',rmse)
 ```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
@@ -72,13 +89,19 @@ df=pd.read_csv('/content/student_scores.csv')
 
 ![image](https://user-images.githubusercontent.com/128135616/229409927-c29886cf-7bc0-4fa2-9d62-3e0bf51b3b97.png)
 
-![image](https://user-images.githubusercontent.com/128135616/229430829-372414ea-f6cb-438b-8762-92dd0ecc0cba.png)
+![image](https://user-images.githubusercontent.com/128135616/229713071-2059f62e-c927-48f0-b299-8f666aa27d46.png)
 
 ![image](https://user-images.githubusercontent.com/128135616/229710141-fd0eb77d-729b-4a39-872b-c494430633f5.png)
 
 ![image](https://user-images.githubusercontent.com/128135616/229710494-ee71d890-689b-421e-8fec-89ee2d6424c8.png)
 
 ![image](https://user-images.githubusercontent.com/128135616/229712357-c3b55207-2501-4cc8-bb8d-3f1c426f28a1.png)
+
+![image](https://user-images.githubusercontent.com/128135616/229713948-1258fd11-c39f-43f0-a897-dd530a1a9415.png)
+
+![image](https://user-images.githubusercontent.com/128135616/229714578-0a703226-fe37-4f4c-bd79-0655a444d66b.png)
+
+
 
 
 
