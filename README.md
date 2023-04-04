@@ -7,12 +7,13 @@ To write a program to predict the marks scored by a student using the simple lin
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
-## Algorithm
-1. 
-2. 
-3. 
-4. 
-
+## Algorithm:
+1. Use the standard libraries in python for Gradient Design.
+2. Set Variables for assigning dataset values.
+3. Import linear regression from sklearn. 
+4. Assign the points for representing the graph.
+5. predict the regression for marks by using the representation of the graph.
+6. Compare the graphs and hence we obtained the linear regression for the given data.
 ## Program:
 ```
 Program to implement the simple linear regression model for predicting the marks scored.
