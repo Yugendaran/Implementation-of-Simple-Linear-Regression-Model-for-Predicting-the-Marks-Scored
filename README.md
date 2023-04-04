@@ -37,6 +37,7 @@ df=pd.read_csv('/content/student_scores.csv')
     
 [4] print("Array value of y:")
     y=df.iloc[:,1].values
+    y
     
 [5] #splitting train and test data
     from sklearn.model_selection import train_test_split
@@ -77,7 +78,8 @@ df=pd.read_csv('/content/student_scores.csv')
 
 ![image](https://user-images.githubusercontent.com/128135616/229710494-ee71d890-689b-421e-8fec-89ee2d6424c8.png)
 
-![image](https://user-images.githubusercontent.com/128135616/229711316-2f9a93f9-287b-4772-a814-14eb656ebe93.png)
+![image](https://user-images.githubusercontent.com/128135616/229711948-c98c0d48-a869-497b-b859-57c4af5e1d9b.png)
+
 
 
 
