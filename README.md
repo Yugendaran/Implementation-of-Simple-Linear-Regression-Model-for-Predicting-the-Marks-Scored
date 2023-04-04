@@ -37,6 +37,19 @@ df=pd.read_csv('/content/student_scores.csv')
     
 [4] print("Array value of y:")
     y=df.iloc[:,1].values
+    
+[5] #splitting train and test data
+    from sklearn.model_selection import train_test_split
+    x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
+    
+    from sklearn.linear_model import LinearRegression
+    regressor=LinearRegression()
+    regressor.fit(x_train,y_train)
+    y_pred=regressor.predict(x_test)
+    
+    #displaying predicted values
+    y_pred
+    
 ```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
@@ -46,6 +59,9 @@ df=pd.read_csv('/content/student_scores.csv')
 ![image](https://user-images.githubusercontent.com/128135616/229409927-c29886cf-7bc0-4fa2-9d62-3e0bf51b3b97.png)
 
 ![image](https://user-images.githubusercontent.com/128135616/229430829-372414ea-f6cb-438b-8762-92dd0ecc0cba.png)
+
+![image](https://user-images.githubusercontent.com/128135616/229709402-08c04449-7e71-4ad7-9a9e-121d73330810.png)
+
 
 
 
