@@ -26,62 +26,62 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error,mean_squared_error
 df=pd.read_csv('/content/student_scores.csv')
 #displaying the content in datafile
-[1] print("df.head():")
-    df.head()
+print("df.head():")
+df.head()
 
-[2] print("df.tail(): ")
-    df.tail()
+print("df.tail(): ")
+df.tail()
   
-[3] print("Array values of x:")
-    x=df.iloc[:,:-1].values
-    x
+print("Array values of x:")
+x=df.iloc[:,:-1].values
+x
     
-[4] print("Array value of y:")
-    y=df.iloc[:,1].values
-    y
+print("Array value of y:")
+y=df.iloc[:,1].values
+y
     
-[5] #splitting train and test data
-    from sklearn.model_selection import train_test_split
-    x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
+#splitting train and test data
+from sklearn.model_selection import train_test_split
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
+
+from sklearn.linear_model import LinearRegression
+regressor=LinearRegression()
+regressor.fit(x_train,y_train)
+y_pred=regressor.predict(x_test)
     
-    from sklearn.linear_model import LinearRegression
-    regressor=LinearRegression()
-    regressor.fit(x_train,y_train)
-    y_pred=regressor.predict(x_test)
-    
-    #displaying predicted values
-    print("y_pred:")
-    y_pred
+#displaying predicted values
+print("y_pred:")
+y_pred
      
-    #displaying actual values
-    print("y_test:")
-    y_test
+#displaying actual values
+print("y_test:")
+y_test
  
-[6] #graph plot for training data
-    print("Training set graph:")
-    plt.scatter(x_train,y_train,color="orange")
-    plt.plot(x_train,regressor.predict(x_train),color="red")
-    plt.title("Hours vs Scores (Trainig set)")
-    plt.xlabel("Hours")
-    plt.ylabel("Scores")
-    plt.show()
+#graph plot for training data
+print("Training set graph:")
+plt.scatter(x_train,y_train,color="orange")
+plt.plot(x_train,regressor.predict(x_train),color="red")
+plt.title("Hours vs Scores (Trainig set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
+plt.show()
     
-[7] #graph plot for Test data
-    print("Test Set graph:")
-    plt.scatter(x_test,y_test,color="green")
-    plt.plot(x_test,regressor.predict(x_test),color="violet")
-    plt.title("Hours vs Scores (Trainig set)")
-    plt.xlabel("Hours")
-    plt.ylabel("Scores")
-    plt.show()
+#graph plot for Test data
+print("Test Set graph:")
+plt.scatter(x_test,y_test,color="green")
+plt.plot(x_test,regressor.predict(x_test),color="violet")
+plt.title("Hours vs Scores (Trainig set)")
+plt.xlabel("Hours")
+plt.ylabel("Scores")
+plt.show()
     
- [8] print("Values of MSE,MAE and RMSE:")
-     mse=mean_squared_error(y_test,y_pred)
-     print('MSE = ',mse)
-     mae=mean_absolute_error(y_test,y_pred)
-     print('MAE = ',mae)
-     rmse=np.sqrt(mse)
-     print('RMSE = ',rmse)
+print("Values of MSE,MAE and RMSE:")
+mse=mean_squared_error(y_test,y_pred)
+print('MSE = ',mse)
+mae=mean_absolute_error(y_test,y_pred)
+print('MAE = ',mae)
+rmse=np.sqrt(mse)
+print('RMSE = ',rmse)
 ```
 ## Output:
 ![image](https://user-images.githubusercontent.com/128135616/229407897-6118d22a-60ea-46f8-9122-3eb02f3fcd21.png)
